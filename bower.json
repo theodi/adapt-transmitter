@@ -1,0 +1,24 @@
+{
+  "name": "adapt-transmitter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theodi/adapt-transmitter.git"
+  },
+  "framework": ">=5.17.7",
+  "version": "1.0.0",
+  "extension": "transmitter",
+  "displayName": "transmitter",
+  "description": "The transmitter extension allows you send state data from a component to a server via an API.",
+  "main": "/js/adapt-transmitter.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "authors": [
+    "David Tarrant <davetaz@theodi.org>"
+  ],
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/theodi/adapt-transmitter",
+  "issues": "https://github.com/theodi/adapt-transmitter/issues/",
+  "targetAttribute": "_transmitter"
+}

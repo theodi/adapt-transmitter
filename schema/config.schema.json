@@ -1,0 +1,33 @@
+{
+  "$anchor": "transmitter-config",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "config"
+    },
+    "with": {
+      "properties": {
+        "_transmitter": {
+          "type": "object",
+          "title": "Transmitter",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable transmitter",
+              "description": "If enabled, the plugin will attempt to send completion data to the defined API endpoint.",
+              "default": true
+            },
+            "_endPoint": {
+              "type": "string",
+              "title": "API endpoint",
+              "description": "API endpoint to send statements to.",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

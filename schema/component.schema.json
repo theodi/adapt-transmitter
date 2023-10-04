@@ -1,0 +1,33 @@
+{
+  "$anchor": "transmitter-component",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "$patch": {
+    "source": {
+      "$ref": "component"
+    },
+    "with": {
+      "properties": {
+        "_transmitter": {
+          "type": "object",
+          "title": "Transmitter",
+          "default": {},
+          "properties": {
+            "_isEnabled": {
+              "type": "boolean",
+              "title": "Enable transmitter",
+              "description": "Set to true to send completion data from this component to the configured endpoint",
+              "default": false
+            },
+            "_componentURI": {
+              "type": "string",
+              "title": "Component Identifier",
+              "description": "A unique ID for this component to send to the endpoint, leaving this blank will result in the component ID being used.",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "_transmitter": {
+    "_isEnabled": true,
+    "_endPoint": "http://example.org/receiver"
+  },
+  {
+    "_component": "mcq",
+    // other config
+    "_transmitter": {
+      "_isEnabled": true,
+      "_componentURI": "GUID/URI/ID"
+    }
+  }
+}

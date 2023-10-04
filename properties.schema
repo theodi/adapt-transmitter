@@ -1,0 +1,74 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-03/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "config": {
+          "type": "object",
+          "properties": {
+            "_transmitter": {
+              "type": "object",
+              "required": false,
+              "legend": "Transmitter",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": true,
+                  "default": true,
+                  "title": "Is Enabled",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "If enabled, the plugin will attempt to send completion data to the defined API endpoint."
+                },
+                "_endPoint": {
+                  "type": "string",
+                  "required": false,
+                  "title": "API Endpoint",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "API endpoint to send statements to."
+                }
+              }
+            }
+          }
+        },
+        "component": {
+          "type": "object",
+          "properties": {
+            "_transmitter": {
+              "type": "object",
+              "required": false,
+              "legend": "Transmitter",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "title": "Enable transmitter",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": "Set to true to enable."
+                },
+                "_componentURI": {
+                  "type": "string",
+                  "required": false,
+                  "title": "Component ID",
+                  "inputType": "Text",
+                  "validators": [],
+                  "translatable": true,
+                  "help": "A unique ID for this component to send to the endpoint, leaving this blank will result in the component ID being used."
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
